@@ -319,7 +319,13 @@ html body .primary-button {
   background-color: #676cdb;
   border-radius: 55px;
   display: inline-block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
+html body .primary-button:hover {
+  translate: 0 -3px;
+}
+
 nav {
   padding: 30px 0;
   background-color: transparent;
