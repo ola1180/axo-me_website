@@ -1,3 +1,24 @@
-a {
-	text-decoration: none;
+body {
+    font-family: $mainFont;
+    font-size: 18px;
+    color: $primaryFontColor;
+    line-height: 1.5;
+
+    a {
+        text-decoration: none;
+        color: $secondaryFontColor;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1360px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
 }
