@@ -269,38 +269,52 @@ summary {
   display: list-item;
 }
 
-body {
+html {
+  scroll-behavior: smooth;
+}
+html body {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   color: #000;
   line-height: 1.5;
 }
-body h1,
-body h2 {
+html body h1,
+html body h2 {
   font-family: "Poppins", sans-serif;
   margin: 0;
+  line-height: 1.2;
 }
-body p {
+html body p {
   color: #9f9f9f;
+  margin: 0;
 }
-body a {
+html body a {
   text-decoration: none;
   color: #fff;
 }
-body ul {
+html body ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-body .container {
+html body .container {
   max-width: 1360px;
   padding: 0 15px;
   margin: 0 auto;
 }
-body section {
-  padding: 155px 0 0 0;
+html body section {
+  padding: 120px 0 0 0;
 }
-body .primary-button {
+html body .heading p {
+  font-size: 22px;
+  color: #676cdb;
+}
+html body .heading h2 {
+  font-size: 48px;
+  margin: 5px 0 25px 0;
+  font-weight: 700;
+}
+html body .primary-button {
   padding: 21px 44px;
   background-color: #676cdb;
   border-radius: 55px;
@@ -407,4 +421,54 @@ nav .container .media-list {
   inset: auto -60px 0 auto;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
+}
+
+.services-section .heading {
+  text-align: center;
+}
+.services-section .services-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 -15px;
+}
+.services-section .services-container .services-item {
+  width: 33.3333333333;
+  padding: 0 15px;
+}
+.services-section .services-container .services-item .services-item-box {
+  padding: 36px;
+  -webkit-box-shadow: 0px 20px 35px 10px rgba(4, 9, 30, 0.05);
+          box-shadow: 0px 20px 35px 10px rgba(4, 9, 30, 0.05);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.services-section .services-container .services-item .services-item-box .mix-icons {
+  display: inline-block;
+  position: relative;
+}
+.services-section .services-container .services-item .services-item-box .mix-icons::before {
+  content: "";
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f5ad";
+  font-size: 40px;
+  inset: 0 auto auto 0;
+  rotate: 135deg;
+  translate: 50% 35%;
+}
+.services-section .services-container .services-item .services-item-box i {
+  font-size: 65px;
+}
+.services-section .services-container .services-item .services-item-box h3 {
+  font-size: 24px;
+  margin: 25px 0 17px;
+  font-weight: 500;
 }
