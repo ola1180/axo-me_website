@@ -293,6 +293,8 @@ body .container {
 nav {
   padding: 30px 0;
   background-color: #212025;
+  position: fixed;
+  width: 100%;
 }
 nav .container {
   display: -webkit-box;
