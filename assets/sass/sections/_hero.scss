@@ -1,0 +1,69 @@
+.hero {
+    background-color: $heroBgColor;
+    position: relative;
+    padding: 0;
+
+
+    .container {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 360px;
+            height: 100%;
+            background-color: $primaryColor;
+            inset: 0 0 auto auto;
+        }
+
+
+        .about {
+            width: 60%;
+            padding: 155px 0 0 0;
+
+            h1 {
+                font-size: 72px;
+                color: $secondaryFontColor;
+                line-height: 1.2;
+                font-weight: 600;
+
+            }
+
+            p {
+                margin: 24px 0 40px 0;
+            }
+
+            .stats {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 80px 0 56px 0;
+
+                .stats-count {
+                    font-family: $headingsFont;
+                    font-size: 48px;
+                    color: $secondaryFontColor;
+                    margin: 0;
+                    line-height: 1.2;
+                }
+
+                .stats-title {
+                    font-size: 20px;
+                    margin: 0;
+                }
+            }
+        }
+
+
+        img {
+            width: 500px;
+            position: absolute;
+            inset: auto -60px 0 auto;
+            filter: grayscale(1);
+        }
+
+
+    }
+}

@@ -275,6 +275,14 @@ body {
   color: #000;
   line-height: 1.5;
 }
+body h1,
+body h2 {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+body p {
+  color: #9f9f9f;
+}
 body a {
   text-decoration: none;
   color: #fff;
@@ -289,12 +297,22 @@ body .container {
   padding: 0 15px;
   margin: 0 auto;
 }
-
+body section {
+  padding: 155px 0 0 0;
+}
+body .primary-button {
+  padding: 21px 44px;
+  background-color: #676cdb;
+  border-radius: 55px;
+  display: inline-block;
+}
 nav {
   padding: 30px 0;
-  background-color: #212025;
+  background-color: transparent;
   position: fixed;
   width: 100%;
+  inset: 0 0 auto auto;
+  z-index: 100;
 }
 nav .container {
   display: -webkit-box;
@@ -304,6 +322,9 @@ nav .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 nav .container .logo span {
   color: #676cdb;
@@ -319,4 +340,71 @@ nav .container .media-list {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  margin: 0 25px 0 0;
+}
+
+.hero {
+  background-color: #212025;
+  position: relative;
+  padding: 0;
+}
+.hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.hero .container::before {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 100%;
+  background-color: #676cdb;
+  inset: 0 0 auto auto;
+}
+.hero .container .about {
+  width: 60%;
+  padding: 155px 0 0 0;
+}
+.hero .container .about h1 {
+  font-size: 72px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: 600;
+}
+.hero .container .about p {
+  margin: 24px 0 40px 0;
+}
+.hero .container .about .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 80px 0 56px 0;
+}
+.hero .container .about .stats .stats-count {
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  color: #fff;
+  margin: 0;
+  line-height: 1.2;
+}
+.hero .container .about .stats .stats-title {
+  font-size: 20px;
+  margin: 0;
+}
+.hero .container img {
+  width: 500px;
+  position: absolute;
+  inset: auto -60px 0 auto;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
 }

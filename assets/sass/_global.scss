@@ -4,6 +4,16 @@ body {
     color: $primaryFontColor;
     line-height: 1.5;
 
+    h1,
+    h2 {
+        font-family: $headingsFont;
+        margin: 0;
+    }
+
+    p {
+        color: $paragraphFontColor;
+    }
+
     a {
         text-decoration: none;
         color: $secondaryFontColor;
@@ -21,4 +31,16 @@ body {
         margin: 0 auto;
     }
 
+    section {
+        padding: 155px 0 0 0;
+    }
+
+    .primary-button {
+        padding: 21px 44px;
+        background-color: $primaryColor;
+        border-radius: 55px;
+        display: inline-block;
+
+        &:hover {}
+    }
 }
