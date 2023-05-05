@@ -538,3 +538,60 @@ nav .container .media-list {
   font-size: 50px;
   margin: 0 10px 0 0;
 }
+
+.portfolio .heading {
+  text-align: center;
+}
+.portfolio .gallery-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  margin: 0 0 40px 0;
+}
+.portfolio .gallery-menu li a {
+  color: #000;
+}
+.portfolio .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.portfolio .gallery .gallery-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 33.3333333333;
+  gap: 20px;
+}
+.portfolio .gallery .gallery-col .img-container {
+  width: 33.3333333333;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.portfolio .gallery .gallery-col .img-container img {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  width: 100%;
+}
+.portfolio .gallery .gallery-col .img-container img:hover {
+  scale: 1.1;
+}
