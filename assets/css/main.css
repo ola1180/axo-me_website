@@ -654,3 +654,17 @@ nav .container .media-list {
   font-size: 20px;
   line-height: 27px;
 }
+.testimonials .collaborators-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #676cdb;
+  border-radius: 20px;
+  margin: 120px 0 0 0;
+}

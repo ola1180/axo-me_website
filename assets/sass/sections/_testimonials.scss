@@ -51,4 +51,13 @@
             }
         }
     }
+
+    .collaborators-banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $primaryColor;
+        border-radius: 20px;
+        margin: 120px 0 0 0;
+    }
 }
