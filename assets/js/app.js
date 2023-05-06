@@ -1,4 +1,6 @@
-// Navigation
+// Navigation 
+
+  //scroll color change
 
 document.addEventListener('scroll', () => {
     const nav = document.querySelector('nav');
