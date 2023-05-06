@@ -86,5 +86,25 @@ html {
             justify-content: center;
             gap: 10px;
         }
+
+        .circle-cursor {
+            position: fixed;
+            left: 10px;
+            width: 40px;
+            height: 40px;
+            translate: -50% -50%;
+            background-color: $primaryColor;
+            opacity: 0.5;
+            border-radius: 50%;
+            pointer-events: none;
+            transition: width 0.5s, height 0.5s;
+
+            &.grow {
+                width: 80px;
+                height: 80px;
+                transition: width 0.5s, height 0.5s;
+            }
+        }
+
     }
 }

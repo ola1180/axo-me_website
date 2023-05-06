@@ -346,6 +346,25 @@ html body .media-list {
           justify-content: center;
   gap: 10px;
 }
+html body .circle-cursor {
+  position: fixed;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  translate: -50% -50%;
+  background-color: #676cdb;
+  opacity: 0.5;
+  border-radius: 50%;
+  pointer-events: none;
+  -webkit-transition: width 0.5s, height 0.5s;
+  transition: width 0.5s, height 0.5s;
+}
+html body .circle-cursor.grow {
+  width: 80px;
+  height: 80px;
+  -webkit-transition: width 0.5s, height 0.5s;
+  transition: width 0.5s, height 0.5s;
+}
 
 @-webkit-keyframes slidein {
   from {
