@@ -61,16 +61,24 @@ html {
         }
 
 
-        .primary-button {
+        .button {
             padding: 21px 44px;
-            background-color: $primaryColor;
             border-radius: 55px;
             display: inline-block;
             transition: $mainTransition;
+            color: $secondaryFontColor;
 
             &:hover {
                 translate: 0 -3px;
             }
+        }
+
+        .primary-button {
+            background-color: $primaryColor;
+        }
+
+        .secondary-button {
+            background-color: $secondaryColor;
         }
     }
 

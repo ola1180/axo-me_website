@@ -1,0 +1,65 @@
+.contact-section {
+
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .contact-info {
+            font-style: normal;
+            width: 50%;
+
+            .contact-type {
+                color: $primaryFontColor;
+                font-size: 22px;
+                font-weight: 500;
+            }
+
+            .contact-data {
+                color: $paragraphFontColor;
+                margin: 0 0 30px 0;
+                display: block;
+            }
+        }
+
+        .contact-form {
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: $primaryColor;
+            width: 50%;
+            padding: 100px 50px 50px 50px;
+            border-radius: 20px;
+
+            input {
+                background: none;
+                border: none;
+                color: $secondaryFontColor;
+                font-weight: 300;
+                padding: 0 0 15px 0;
+
+                border-bottom: 1.5px solid $borderColor;
+
+                &::placeholder {
+                    color: $secondaryFontColor;
+                    font-weight: 300;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+
+            }
+
+            .button-container {
+                margin: 0 auto;
+
+                button {
+                    border: none;
+                }
+
+            }
+        }
+    }
+}
