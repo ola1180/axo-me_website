@@ -42,10 +42,43 @@ nav {
         .nav-menu {
             display: flex;
             gap: 40px;
-        }
 
-        .media-list {
-            margin: 0 25px 0 0;
+            .nav-item {
+                display: block;
+                transition: $mainTransition;
+
+
+                &:hover {
+                    color: $primaryColor;
+
+                    &::after {
+                        visibility: visible;
+                    }
+                }
+
+
+                &::after {
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f111";
+                    visibility: hidden;
+                    padding: 2px;
+                    font-weight: 900;
+                    font-size: 5px;
+
+                }
+
+                &.active {
+                    color: $primaryColor;
+
+                    &::after {
+                        visibility: visible;
+                    }
+                }
+            }
+
+            .media-list {
+                margin: 0 25px 0 0;
+            }
         }
     }
 }

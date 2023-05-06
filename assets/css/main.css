@@ -404,7 +404,32 @@ nav .container .nav-menu {
   display: flex;
   gap: 40px;
 }
-nav .container .media-list {
+nav .container .nav-menu .nav-item {
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+nav .container .nav-menu .nav-item:hover {
+  color: #676cdb;
+}
+nav .container .nav-menu .nav-item:hover::after {
+  visibility: visible;
+}
+nav .container .nav-menu .nav-item::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f111";
+  visibility: hidden;
+  padding: 2px;
+  font-weight: 900;
+  font-size: 5px;
+}
+nav .container .nav-menu .nav-item.active {
+  color: #676cdb;
+}
+nav .container .nav-menu .nav-item.active::after {
+  visibility: visible;
+}
+nav .container .nav-menu .media-list {
   margin: 0 25px 0 0;
 }
 
@@ -504,7 +529,6 @@ nav .container .media-list {
   position: relative;
 }
 .services-section .services-container .services-item .services-item-box .mix-icons::before {
-  content: "";
   position: absolute;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;

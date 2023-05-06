@@ -11,3 +11,18 @@ document.addEventListener('scroll', () => {
         nav.classList.remove('color-scroll');
     }
     });
+
+  //scroll color change
+
+  let menuLinks = document.querySelectorAll('.nav-item')
+  
+  menuLinks.forEach(item => {
+      item.addEventListener ('click' , (event) => {
+  
+          if(!item.classList.contains('active')) {
+              menuLinks.forEach(item => item.classList.remove('active'))
+              item.classList.add('active')
+  
+          } 
+      })
+  })
