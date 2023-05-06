@@ -562,13 +562,13 @@ nav .container .media-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 -10px;
 }
 .portfolio .gallery .gallery-col {
   display: -webkit-box;
@@ -578,20 +578,79 @@ nav .container .media-list {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 33.3333333333;
-  gap: 20px;
+  width: 33.3333333333%;
+  padding: 0 10px;
+  margin: -10px 0;
 }
 .portfolio .gallery .gallery-col .img-container {
-  width: 33.3333333333;
   overflow: hidden;
-  border-radius: 20px;
+  width: 100%;
+  padding: 10px 0;
 }
 .portfolio .gallery .gallery-col .img-container img {
+  width: 100%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   display: block;
-  width: 100%;
+  border-radius: 20px;
 }
 .portfolio .gallery .gallery-col .img-container img:hover {
   scale: 1.1;
+}
+
+.testimonials .testimonials-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.testimonials .testimonials-top .arrows i {
+  font-size: 55px;
+  color: #f2f2f2;
+}
+.testimonials .testimonials-top .arrows i:first-of-type {
+  margin-right: 5px;
+}
+.testimonials .testimonials-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+.testimonials .testimonials-bottom .testimonials-box {
+  -webkit-box-shadow: 0px 20px 35px 10px rgba(4, 9, 30, 0.05);
+          box-shadow: 0px 20px 35px 10px rgba(4, 9, 30, 0.05);
+  padding: 30px;
+  border-radius: 20px;
+}
+.testimonials .testimonials-bottom .testimonials-box .client-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px 0 0 0;
+}
+.testimonials .testimonials-bottom .testimonials-box .client-box img {
+  width: 60px;
+  border-radius: 50%;
+  margin: 0 20px 0 0;
+}
+.testimonials .testimonials-bottom .testimonials-box .client-box .client-name {
+  color: #212025;
+  font-size: 24px;
+  font-weight: 500;
+}
+.testimonials .testimonials-bottom .testimonials-box .client-box .client-company {
+  font-size: 20px;
+  line-height: 27px;
 }

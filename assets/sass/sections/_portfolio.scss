@@ -20,25 +20,31 @@
 
     .gallery {
         display: flex;
-        gap: 20px;
         align-items: center;
         justify-content: center;
+        margin: 0 -10px;
+
 
         .gallery-col {
             display: flex;
             flex-direction: column;
-            width: calc(100/3);
-            gap: 20px;
+            width: calc(100%/3);
+            padding: 0 10px;
+            margin: -10px 0;
+
 
             .img-container {
-                width: calc(100/3);
                 overflow: hidden;
-                border-radius: 20px;
+                width: 100%;
+                padding: 10px 0;
+
 
                 img {
+                    width: 100%;
                     transition: $mainTransition;
                     display: block;
-                    width: 100%;
+                    border-radius: 20px;
+
 
                     &:hover {
                         scale: 1.1;
