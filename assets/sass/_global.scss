@@ -4,7 +4,7 @@ html {
 
     body {
         font-family: $mainFont;
-        font-size: 18px;
+        @include fluid-type(320px, 1290px, 16px, 18px);
         color: $primaryFontColor;
         line-height: 1.5;
 
@@ -49,14 +49,16 @@ html {
             margin: 0 0 50px 0;
 
             .title {
-                font-size: 22px;
                 color: $primaryColor;
+                @include fluid-type(320px, 1290px, 18px, 22px);
+
             }
 
             h2 {
-                font-size: 48px;
                 margin: 5px 0 0 0;
                 font-weight: 700;
+                @include fluid-type(320px, 1290px, 28px, 48px);
+
             }
         }
 

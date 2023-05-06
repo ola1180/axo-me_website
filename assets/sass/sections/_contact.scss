@@ -5,6 +5,10 @@
         display: flex;
         justify-content: space-between;
 
+        @include forTablet {
+            flex-direction: column;
+        }
+
         .contact-info {
             font-style: normal;
             width: 50%;
@@ -15,15 +19,20 @@
                 font-weight: 500;
             }
 
+
+
             .contact-data {
                 color: $paragraphFontColor;
                 margin: 0 0 30px 0;
                 display: block;
             }
+
+            @include forTablet {
+                width: 100%;
+            }
         }
 
         .contact-form {
-            margin-left: 30px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -32,14 +41,15 @@
             padding: 100px 50px 50px 50px;
             border-radius: 20px;
 
+
             input {
                 background: none;
                 border: none;
                 color: $secondaryFontColor;
                 font-weight: 300;
                 padding: 0 0 15px 0;
-
                 border-bottom: 1.5px solid $borderColor;
+                margin: 0 0 40px 0;
 
                 &::placeholder {
                     color: $secondaryFontColor;
@@ -59,6 +69,11 @@
                     border: none;
 
                 }
+            }
+
+            @include forTablet {
+                width: 100%;
+                padding: 100px 50px 50px 50px;
             }
         }
     }

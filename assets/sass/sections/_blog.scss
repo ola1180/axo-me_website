@@ -13,9 +13,29 @@
         align-items: center;
         margin: 0 -15px;
 
+        @include forTablet {
+            flex-wrap: wrap;
+            gap: 20px;
+
+        }
+
+        @include forSmartphone {
+            flex-direction: column;
+            gap: 20px;
+        }
+
         .blog-container {
             padding: 0 15px;
             width: calc(100%/3);
+
+            @include forTablet {
+                width: 45%;
+                padding: 0;
+            }
+
+            @include forSmartphone {
+                width: 100%;
+            }
 
 
 
@@ -55,7 +75,7 @@
                     .blog-title {
                         color: $primaryFontColor;
                         font-weight: 500;
-                        font-size: 22px;
+                        @include fluid-type(320px, 1290px, 20px, 22px);
                         margin: 0 0 10px 0;
                     }
                 }

@@ -10,9 +10,32 @@
         align-items: center;
         margin: 0 -15px;
 
+        @include forSmartphone {
+            flex-direction: column;
+        }
+
+
+        @include forTablet {
+            flex-wrap: wrap;
+            margin: 0;
+            gap: 20px;
+            justify-content: center;
+
+        }
+
+
         .services-item {
             width: calc(100/3);
             padding: 0 15px;
+
+            @include forTablet {
+                width: 45%;
+                padding: 0;
+            }
+
+            @include forSmartphone {
+                width: 100%;
+            }
 
             .services-item-box {
                 padding: 36px;
@@ -29,20 +52,22 @@
                         font-family: "Font Awesome 5 Free";
                         font-weight: 900;
                         content: "\f5ad";
-                        font-size: 40px;
                         inset: 0 auto auto 0;
                         rotate: 135deg;
                         translate: 50% 35%;
+                        @include fluid-type(320px, 1290px, 25px, 40px);
+
 
                     }
                 }
 
                 i {
-                    font-size: 65px;
+                    @include fluid-type(320px, 1290px, 40px, 65px);
+
                 }
 
                 h3 {
-                    font-size: 24px;
+                    @include fluid-type(320px, 1290px, 18px, 24px);
                     margin: 25px 0 17px;
                     font-weight: 500;
                 }

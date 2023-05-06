@@ -55,3 +55,23 @@ document.addEventListener('scroll', () => {
         nav.classList.remove('color-scroll');
     }
     });
+
+    // hamburger menu
+
+
+let hamburgerButton = document.querySelector(".hamburger")
+let navigation = document.querySelector('.nav-menu')
+
+hamburgerButton.addEventListener("click", () => {
+hamburgerButton.classList.toggle("active")
+navigation.classList.toggle("open")
+})
+
+let navigationLinks = document.querySelectorAll('.nav-menu li a')
+
+navigationLinks.forEach(item => {
+    item.addEventListener('click', () => {
+        hamburgerButton.classList.remove('active')
+        navigation.classList.remove('open')
+    })
+})

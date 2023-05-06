@@ -7,6 +7,8 @@
         display: flex;
         align-items: center;
         position: relative;
+        overflow: hidden;
+
 
         &::before {
             content: '';
@@ -15,6 +17,10 @@
             height: 100%;
             background-color: $primaryColor;
             inset: 0 0 auto auto;
+
+            @include forTablet {
+                display: none;
+            }
         }
 
 
@@ -22,8 +28,12 @@
             width: 60%;
             padding: 155px 0 0 0;
 
+            @include forTablet {
+                width: 100%;
+            }
+
             h1 {
-                font-size: 72px;
+                @include fluid-type(320px, 1290px, 40px, 72px);
                 color: $secondaryFontColor;
                 line-height: 1.2;
                 font-weight: 600;
@@ -42,14 +52,14 @@
 
                 .stats-count {
                     font-family: $headingsFont;
-                    font-size: 48px;
+                    @include fluid-type(320px, 1290px, 35px, 48px);
                     color: $secondaryFontColor;
                     margin: 0;
                     line-height: 1.2;
                 }
 
                 .stats-title {
-                    font-size: 20px;
+                    @include fluid-type(320px, 1290px, 18px, 20px);
                     margin: 0;
                 }
             }
@@ -61,6 +71,10 @@
             position: absolute;
             inset: auto -60px 0 auto;
             filter: grayscale(1);
+
+            @include forTablet {
+                display: none;
+            }
         }
 
 
