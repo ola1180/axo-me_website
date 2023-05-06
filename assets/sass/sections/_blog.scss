@@ -1,0 +1,65 @@
+.blog-section {
+    .heading {
+        text-align: center;
+    }
+
+
+
+
+
+    .blog-boxes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 -15px;
+
+        .blog-container {
+            padding: 0 15px;
+            width: calc(100%/3);
+
+
+
+            .blog-box {
+                box-shadow: 0px 20px 35px 10px $boxShadowColor;
+                display: block;
+                border-radius: 20px;
+                overflow: hidden;
+
+                .img-box {
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        transition: $mainTransition;
+                        display: block;
+
+                        &:hover {
+                            scale: 1.05;
+                        }
+
+                    }
+
+
+                }
+
+                .blog-content {
+                    padding: 30px;
+
+                    .blog-date {
+
+                        .blog-category {
+                            color: $primaryColor;
+                        }
+                    }
+
+                    .blog-title {
+                        color: $primaryFontColor;
+                        font-weight: 500;
+                        font-size: 22px;
+                        margin: 0 0 10px 0;
+                    }
+                }
+            }
+        }
+    }
+}

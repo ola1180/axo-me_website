@@ -308,13 +308,16 @@ html body section {
 html body section:first-of-type {
   padding: 120px 0 0 0;
 }
+html body .heading {
+  margin: 0 0 50px 0;
+}
 html body .heading .title {
   font-size: 22px;
   color: #676cdb;
 }
 html body .heading h2 {
   font-size: 48px;
-  margin: 5px 0 25px 0;
+  margin: 5px 0 0 0;
   font-weight: 700;
 }
 html body .primary-button {
@@ -667,4 +670,55 @@ nav .container .media-list {
   background-color: #676cdb;
   border-radius: 20px;
   margin: 120px 0 0 0;
+}
+
+.blog-section .heading {
+  text-align: center;
+}
+.blog-section .blog-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 -15px;
+}
+.blog-section .blog-boxes .blog-container {
+  padding: 0 15px;
+  width: 33.3333333333%;
+}
+.blog-section .blog-boxes .blog-container .blog-box {
+  -webkit-box-shadow: 0px 20px 35px 10px rgba(4, 9, 30, 0.05);
+          box-shadow: 0px 20px 35px 10px rgba(4, 9, 30, 0.05);
+  display: block;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.blog-section .blog-boxes .blog-container .blog-box .img-box {
+  overflow: hidden;
+}
+.blog-section .blog-boxes .blog-container .blog-box .img-box img {
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: block;
+}
+.blog-section .blog-boxes .blog-container .blog-box .img-box img:hover {
+  scale: 1.05;
+}
+.blog-section .blog-boxes .blog-container .blog-box .blog-content {
+  padding: 30px;
+}
+.blog-section .blog-boxes .blog-container .blog-box .blog-content .blog-date .blog-category {
+  color: #676cdb;
+}
+.blog-section .blog-boxes .blog-container .blog-box .blog-content .blog-title {
+  color: #000;
+  font-weight: 500;
+  font-size: 22px;
+  margin: 0 0 10px 0;
 }
