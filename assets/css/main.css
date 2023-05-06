@@ -669,17 +669,18 @@ nav .container .nav-menu .media-list {
 .portfolio .gallery .gallery-col .img-container {
   overflow: hidden;
   width: 100%;
-  padding: 10px 0;
+  margin: 10px 0;
+  border-radius: 20px;
 }
 .portfolio .gallery .gallery-col .img-container img {
   width: 100%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   display: block;
-  border-radius: 20px;
+  scale: 1.05;
 }
 .portfolio .gallery .gallery-col .img-container img:hover {
-  scale: 1.1;
+  scale: 1.15;
 }
 
 .testimonials .testimonials-top {
