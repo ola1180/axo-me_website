@@ -337,6 +337,15 @@ html body .primary-button {
 html body .secondary-button {
   background-color: #212025;
 }
+html body .media-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
 
 nav {
   padding: 30px 0;
@@ -368,10 +377,6 @@ nav .container .nav-menu {
   gap: 40px;
 }
 nav .container .media-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
   margin: 0 25px 0 0;
 }
 
@@ -803,4 +808,16 @@ nav .container .media-list {
 }
 .contact-section .container .contact-form .button-container button {
   border: none;
+}
+
+footer {
+  background-color: #676cdb;
+  padding: 37px 0;
+  text-align: center;
+  margin: 120px 0 0 0;
+}
+footer .copyrights {
+  color: #fff;
+  font-weight: 400;
+  margin: 10px 0 0 0;
 }

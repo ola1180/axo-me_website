@@ -80,6 +80,11 @@ html {
         .secondary-button {
             background-color: $secondaryColor;
         }
-    }
 
+        .media-list {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+    }
 }

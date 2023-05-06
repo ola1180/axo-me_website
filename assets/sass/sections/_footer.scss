@@ -1,0 +1,12 @@
+footer {
+    background-color: $primaryColor;
+    padding: 37px 0;
+    text-align: center;
+    margin: 120px 0 0 0;
+
+    .copyrights {
+        color: $secondaryFontColor;
+        font-weight: 400;
+        margin: 10px 0 0 0;
+    }
+}
