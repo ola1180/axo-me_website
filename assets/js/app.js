@@ -1,6 +1,6 @@
 // Global
-
-  // circle cursor
+    
+    // circle cursor
 
 let circleCursor = document.querySelector('.circle-cursor');
 
@@ -15,6 +15,7 @@ function moveCursor(e) {
 
 }
 
+
 let links = Array.from(document.querySelectorAll('a'));
 
 links.forEach((link)=> {
@@ -27,10 +28,23 @@ links.forEach((link)=> {
     })
 })
 
+    // scroll arrow 
+
+document.addEventListener('scroll', () => {
+    const arrow = document.querySelector('.up-arrow');
+    
+    if (window.scrollY > 400) {
+        arrow.classList.add('visible-scroll');
+    } else {
+        arrow.classList.remove('visible-scroll');
+    }
+    });
+    
+
 
 // Navigation 
 
-  //scroll color change
+    //scroll color change
 
 document.addEventListener('scroll', () => {
     const nav = document.querySelector('nav');
@@ -41,18 +55,3 @@ document.addEventListener('scroll', () => {
         nav.classList.remove('color-scroll');
     }
     });
-
-  //scroll color change
-
-  let menuLinks = document.querySelectorAll('.nav-item')
-  
-  menuLinks.forEach(item => {
-      item.addEventListener ('click' , (event) => {
-  
-          if(!item.classList.contains('active')) {
-              menuLinks.forEach(item => item.classList.remove('active'))
-              item.classList.add('active')
-  
-          } 
-      })
-  })
