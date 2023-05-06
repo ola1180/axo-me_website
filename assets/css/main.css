@@ -358,12 +358,36 @@ html body .circle-cursor {
   pointer-events: none;
   -webkit-transition: width 0.5s, height 0.5s;
   transition: width 0.5s, height 0.5s;
+  z-index: 101;
 }
 html body .circle-cursor.grow {
   width: 80px;
   height: 80px;
   -webkit-transition: width 0.5s, height 0.5s;
   transition: width 0.5s, height 0.5s;
+}
+html body .up-arrow {
+  display: block;
+  position: fixed;
+  inset: auto 30px 20px auto;
+  font-size: 40px;
+  color: #000;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+html body .up-arrow::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f062";
+  position: absolute;
+  font-size: 20px;
+  inset: 0 auto auto 50%;
+  translate: -50% 50%;
+  color: #000;
+}
+html body .up-arrow.visible-scroll {
+  visibility: visible;
 }
 
 @-webkit-keyframes slidein {
