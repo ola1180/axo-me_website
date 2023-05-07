@@ -37,11 +37,22 @@
                 width: 100%;
             }
 
+
+
             .services-item-box {
                 padding: 36px;
                 box-shadow: 0px 20px 35px 10px $boxShadowColor;
                 border-radius: 20px;
                 cursor: pointer;
+                transition: $mainTransition;
+                display: block;
+                color: $primaryFontColor;
+
+                &:hover {
+                    background-color: $primaryColor;
+                    color: $secondaryFontColor;
+                }
+
 
                 .mix-icons {
                     display: inline-block;
