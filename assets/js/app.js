@@ -39,8 +39,31 @@ document.addEventListener('scroll', () => {
         arrow.classList.remove('visible-scroll');
     }
     });
-    
 
+
+    //pop up video
+const btn = document.querySelector('.watch-button');
+const videoContainer = document.querySelector('.popup-video');
+const close = document.querySelector('.close-btn');
+
+btn.addEventListener('click', () => {
+ console.log("watch button tapped");
+ let iframe = document.createElement('iframe');
+ iframe.setAttribute("src","https://streamable.com/e/shil2?autoplay=1" );
+ iframe.setAttribute("frameborder", "0");
+ iframe.setAttribute("allow", "autoplay");
+ iframe.classList.add('iframe-video');
+
+ videoContainer.append(iframe);
+ videoContainer.classList.add('show');
+ console.log("watch button tapped finished");
+});
+
+close.addEventListener('click', () => {
+    const iframeVideo = document.querySelector('.iframe-video');
+    iframeVideo.remove();
+    videoContainer.classList.remove('show');
+} );
 
 // Navigation 
 
@@ -75,3 +98,4 @@ navigationLinks.forEach(item => {
         navigation.classList.remove('open')
     })
 })
+

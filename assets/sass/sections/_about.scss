@@ -88,4 +88,47 @@
             }
         }
     }
+
+    .popup-video {
+        position: fixed;
+        inset: 0 auto auto 0;
+        z-index: 150;
+        background-color: rgba(0, 0, 0, 0.8);
+        height: 100%;
+        width: 100%;
+        transition: $mainTransition;
+        display: none;
+        pointer-events: none;
+
+        iframe {
+            position: relative;
+            width: 1120px;
+            height: 630px;
+            inset: 50% auto auto 50%;
+            translate: -50% -50%;
+            object-fit: cover;
+            scale: 0;
+            transition: $mainTransition;
+
+        }
+
+        .close-btn {
+            position: absolute;
+            inset: 30px 30px auto auto;
+            font-size: 30px;
+            color: $secondaryFontColor;
+            z-index: 150;
+            cursor: pointer;
+            font-weight: 100;
+        }
+
+        &.show {
+            pointer-events: all;
+            display: block;
+
+            iframe {
+                scale: 1;
+            }
+        }
+    }
 }
