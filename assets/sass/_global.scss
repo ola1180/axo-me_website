@@ -73,6 +73,11 @@ html {
             &:hover {
                 translate: 0 -3px;
             }
+
+            @include forSmartphone {
+                padding: 15px 34px;
+
+            }
         }
 
         .primary-button {

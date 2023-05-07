@@ -3,15 +3,14 @@
         display: flex;
         align-items: center;
 
-        @include forSmartphone {
-            flex-direction: column;
+        @include forTablet {
+            flex-wrap: wrap;
         }
 
         .photo-container {
             width: 50%;
 
-
-            @include forSmartphone {
+            @include forCustomDevices {
                 width: 100%;
                 margin-bottom: 50px;
             }
@@ -22,12 +21,9 @@
                 margin: 0 auto;
 
                 @include forTablet {
-                    width: 350px;
+                    width: 340px;
                 }
 
-                @include forSmartphone {
-                    width: 300px;
-                }
 
                 img {
                     width: 435px;
@@ -35,12 +31,10 @@
                     border-radius: 20px;
 
                     @include forTablet {
-                        width: 350px;
+                        width: 340px;
                     }
 
-                    @include forSmartphone {
-                        width: 300px;
-                    }
+
                 }
 
                 &::before {
@@ -54,9 +48,14 @@
                     z-index: -1;
                     translate: -30px 30px;
 
-                    @include forSmartphone {
+                    @include forTablet {
                         translate: -20px 20px;
                     }
+
+                    @include forSmartphone {
+                        translate: -10px 10px;
+                    }
+
                 }
             }
         }
@@ -64,16 +63,17 @@
         .about-container {
             width: 50%;
 
-            @include forSmartphone {
+            @include forCustomDevices {
                 width: 100%;
+                margin-bottom: 50px;
             }
-
 
             .buttons {
                 margin: 50px 0 0 0;
                 display: flex;
                 gap: 30px;
                 align-items: center;
+
 
                 .watch-button {
                     color: $primaryFontColor;
@@ -102,13 +102,17 @@
 
         iframe {
             position: relative;
-            width: 1120px;
-            height: 630px;
+            width: 896px;
+            height: 504px;
             inset: 50% auto auto 50%;
             translate: -50% -50%;
             object-fit: cover;
             scale: 0;
             transition: $mainTransition;
+
+            @include forTablet {
+                width: 90%;
+            }
 
         }
 

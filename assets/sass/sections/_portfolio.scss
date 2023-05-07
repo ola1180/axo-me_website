@@ -17,8 +17,36 @@
         li {
             a {
                 color: $primaryFontColor;
+
+                &:hover {
+                    color: $primaryColor;
+
+                    &::after {
+                        visibility: visible;
+                    }
+                }
+
+
+                &::after {
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f111";
+                    visibility: hidden;
+                    padding: 2px;
+                    font-weight: 900;
+                    font-size: 5px;
+
+                }
+
+                &.active {
+                    color: $primaryColor;
+
+                    &::after {
+                        visibility: visible;
+                    }
+                }
             }
         }
+
 
     }
 
@@ -39,6 +67,7 @@
                 grid-column: span 2;
                 border-radius: 20px;
                 overflow: hidden;
+                display: block;
 
                 &.v-strech {
                     grid-row: span 3;
